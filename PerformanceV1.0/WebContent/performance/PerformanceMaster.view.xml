@@ -1,0 +1,21 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="performance.PerformanceMaster" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Lead to Deal Approval">
+		<content>
+		
+			<List items="{/results/0/items}">
+ 
+    <CustomListItem type="Navigation" press = "handleListItemPress">
+      <Label text="{key}"   class="content labelFont" />
+      <core:Icon
+        src="sap-icon://status-completed"
+        class="content1" 
+        color="{path: 'color',formatter: 'Performance.performance.Formatter.statusStateColor'}"
+        />
+    </CustomListItem>
+    
+  </List>
+	
+		</content>
+	</Page>
+</core:View>

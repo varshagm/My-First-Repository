@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{
+				"Performance": "./"}'>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_mvi" theme -->
+
+		<script>
+				sap.ui.localResources("performance");
+
+				// Registering Module path for Application.js File
+				jQuery.sap.registerModulePath('Application', 'Application');
+
+				// Load your application js
+				jQuery.sap.require("Application");
+				
+				//Create an object of the Application class and set content as root
+				//the DIV content will be used to put the views in
+				var app = new Application({ root : "content" });
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
