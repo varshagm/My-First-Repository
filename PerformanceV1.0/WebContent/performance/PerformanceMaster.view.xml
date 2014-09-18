@@ -1,6 +1,6 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="performance.PerformanceMaster" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Lead to Deal Approval Lead to deal">
+	<Page title="Lead to Deal Approval Lead to deal lead to deal">
 		<content>
 		
 			<List items="{/results/0/items}">
